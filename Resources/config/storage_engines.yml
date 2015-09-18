@@ -1,0 +1,8 @@
+parameters:
+    ezpublish.fieldType.relatednodes.converter.class: Eab\RelatedNodesBundle\Core\Persistence\Legacy\Content\FieldValue\Converter\RelatedNodesConverter
+
+services:
+    ezpublish.fieldType.relatednodes.converter:
+        class: %ezpublish.fieldType.relatednodes.converter.class%
+        tags:
+            - {name: ezpublish.storageEngine.legacy.converter, alias: relatednodes, lazy: true, callback: "::create"}

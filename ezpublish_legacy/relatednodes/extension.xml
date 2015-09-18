@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<software>
+    <metadata>
+        <name>EAB Related Nodes extension</name>
+        <version>0.5 beta</version>
+        <copyright>Copyright (C) Enterprise AB Ltd</copyright>
+        <license>GNU General Public License</license>
+        <info_url>http://eab.uk</info_url>
+    </metadata>
+</software>

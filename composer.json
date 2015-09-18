@@ -1,0 +1,14 @@
+{
+    "name": "eab/relatednodesbundle",
+    "description": "Related Nodes datatype bundle for eZ Publish",
+    "license": "GPL-2.0",
+    "authors": [
+        { "name": "Enterprise AB Ltd", "homepage": "http://eab.uk" }
+    ],
+    "require": {
+        "ezsystems/ezpublish-kernel": "*"
+    },
+    "autoload": {
+        "psr-4": { "Eab\\RelatedNodesBundle\\": "" }
+    }
+}

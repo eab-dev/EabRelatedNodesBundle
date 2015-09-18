@@ -1,0 +1,9 @@
+parameters:
+    ezpublish.fieldType.relatednodes.class: Eab\RelatedNodesBundle\Core\FieldType\RelatedNodes\Type
+
+services:
+    ezpublish.fieldType.relatednodes:
+        class: %ezpublish.fieldType.relatednodes.class%
+        parent: ezpublish.fieldType
+        tags:
+            - { name: ezpublish.fieldType, alias: relatednodes }
