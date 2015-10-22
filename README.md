@@ -49,4 +49,14 @@ Installation
 
 4. Use eZ Publish's admin interface to add a field using this datatype to a content type and create some content.
 
-5. Test it in a Twig template using the `ez_render` function.
+5. Test it in a Twig template using `ez_render_field`. A basic usage would be:
+
+        <div>
+            {{ ez_render_field( content,
+                                'my_related_node_field',
+                                {
+                                    'parameters': {
+                                                    'viewType': 'line'
+                                                  }
+                                } ) }}
+        </div>

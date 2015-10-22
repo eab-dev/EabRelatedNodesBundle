@@ -2,7 +2,13 @@
 {% spaceless %}
     {% if not ez_is_field_empty( content, field ) %}
         {% for locationId in field.value.locationIds %}
-            {{ render( controller( "ez_content:viewLocation", {'locationId': locationId, 'viewType': 'line', 'noLayout': 1} ) ) }}
+            {{ render( controller( "ez_content:viewLocation",
+                                   {
+                                        'locationId': locationId,
+                                        'viewType': parameters.viewType | default( 'line' ),
+                                        'noLayout': 1
+                                    }
+                ) ) }}
         {% endfor %}
     {% endif %}
 {% endspaceless %}
