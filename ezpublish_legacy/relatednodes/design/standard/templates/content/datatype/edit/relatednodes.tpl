@@ -19,7 +19,7 @@
             </td>
             <td>
                 {def $node = fetch( 'content', 'node', hash( 'node_id', $node_id ) )}
-                <a href={$selected_node.url_alias|ezurl} target="_blank">/{$selected_node.url_alias|wash}</a>
+                <a href={$node.url_alias|ezurl} target="_blank">/{$node.url_alias|wash}</a>
             </td>
             <td>
                 {$node.name|wash}
