@@ -3,7 +3,8 @@ EabRelatedNodesBundle
 
 Summary
 -------
-eZ Publish 5 bundle providing a very simple Related Nodes datatype for eZ Publish 5.
+eZ Publish 5 bundle providing a very simple Related Nodes (Related Locations)
+datatype for eZ Publish 5.
 
 Fields using the Related Nodes datatype can be accessed or displayed using the
 Symfony stack. To edit them you need to use the legacy stack.
@@ -28,14 +29,13 @@ Requires eZ Publish 5.
 Installation
 ------------
 
-1. If you have configured EAB's package repository you can use composer to install the bundle:
+1. Install the bundle into `vendors` using composer:
 
         composer require --update-no-dev --prefer-dist eab/relatednodesbundle
 
-   Otherwise, clone the bundle using git:
+   Or if you want to modify the bundle, clone the bundle into `src` using git:
 
-        cd src
-        git clone https://github.com/eab-dev/RelatedNodesBundle.git Eab/RelatedNodesBundle
+        git clone https://github.com/eab-dev/EabRelatedNodesBundle.git src/Eab/RelatedNodesBundle
 
 2. Edit the file `ezpublish/EzPublishKernel.php`, look for the function `registerBundles()` and add:
 
